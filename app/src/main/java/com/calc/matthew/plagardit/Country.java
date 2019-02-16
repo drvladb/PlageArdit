@@ -6,6 +6,7 @@ public class Country {
     private int transportationLevel;
     private int population;
     private int infectedPopulation;
+    private int dead;
 
     public Country(String name, int socialLevel, int transportationLevel, int population, int infectedPopulation)
     {
@@ -14,6 +15,7 @@ public class Country {
         this.transportationLevel = transportationLevel;
         this.population = population;
         this.infectedPopulation = infectedPopulation;
+        this.dead = 0;
     }
 
     public void addInfected(int infectedAdd)
@@ -22,4 +24,23 @@ public class Country {
         this.population -= infectedAdd;
     }
 
+    public int getSocialLevel()
+    {
+        return this.socialLevel;
+    }
+
+    public int getTransportationLevel()
+    {
+        return this.transportationLevel;
+    }
+
+    public int getPopulation()
+    {
+        return this.population;
+    }
+
+    public int getInfectedPopulation()
+    {
+        return this.infectedPopulation;
+    }
 }

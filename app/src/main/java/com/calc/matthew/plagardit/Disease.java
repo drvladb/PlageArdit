@@ -29,5 +29,9 @@ public class Disease {
         symptoms.add(symptom);
     }
 
+    public int getSpreadLevel()
+    {
+        return this.spreadLevel;
+    }
 
 }
